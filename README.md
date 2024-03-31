@@ -168,7 +168,7 @@ We defined:
 
 Now it's time to attach it to our service
 
-```
+```scala
 val mkRoutes: Resource[IO, HttpRoutes[IO]] =
   auth
     .ofService(Tasks, TasksServiceGen.serviceProduct)
